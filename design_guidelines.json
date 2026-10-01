@@ -1,0 +1,257 @@
+{
+  "theme": "light",
+  "project_name": "Tadika Ceria",
+  "archetype": "ORGANIC & EARTHY with Pastel Soft SaaS warmth (Preschool/Early Childhood Management)",
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569"
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B"
+      },
+      {
+        "name": "sidebar",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B"
+      },
+      {
+        "name": "subtle_amber_card",
+        "kind": "solid",
+        "bg": "#FFFBEB",
+        "on_bg": "#78350F",
+        "on_bg_muted": "#92400E"
+      },
+      {
+        "name": "subtle_emerald_card",
+        "kind": "solid",
+        "bg": "#ECFDF5",
+        "on_bg": "#065F46",
+        "on_bg_muted": "#047857"
+      },
+      {
+        "name": "subtle_indigo_card",
+        "kind": "solid",
+        "bg": "#EEF2FF",
+        "on_bg": "#3730A3",
+        "on_bg_muted": "#4338CA"
+      },
+      {
+        "name": "subtle_rose_card",
+        "kind": "solid",
+        "bg": "#FFF1F2",
+        "on_bg": "#9F1239",
+        "on_bg_muted": "#BE123C"
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#0F172A",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#CBD5E1"
+      },
+      {
+        "name": "receipt_paper",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#1E293B",
+        "on_bg_muted": "#64748B"
+      },
+      {
+        "name": "hero_banner",
+        "kind": "solid",
+        "bg": "#0D9488",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#CCFBF1",
+        "roles": {
+          "link": "#FFFFFF",
+          "accent_label": "#FEF08A"
+        }
+      }
+    ],
+    "brand_palette": {
+      "primary_teal": "#0D9488",
+      "primary_hover": "#0F766E",
+      "primary_light": "#F0FDFA",
+      "primary_border": "#99F6E4",
+      "accent_amber": "#F59E0B",
+      "accent_amber_light": "#FEF3C7",
+      "accent_coral": "#F97316",
+      "accent_coral_light": "#FFEDD5",
+      "status_success_emerald": "#10B981",
+      "status_warning_amber": "#F59E0B",
+      "status_danger_rose": "#EF4444",
+      "status_info_sky": "#0284C7",
+      "status_neutral_slate": "#64748B"
+    },
+    "accent": "#0D9488",
+    "on_accent": "#FFFFFF"
+  },
+  "typography": {
+    "font_family_heading": "Plus Jakarta Sans Variable, sans-serif",
+    "font_family_body": "Plus Jakarta Sans Variable, sans-serif",
+    "font_import": "@import \"@fontsource-variable/plus-jakarta-sans\";",
+    "scale_px": {
+      "display": 48,
+      "h1": 36,
+      "h2": 28,
+      "h3": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "letter_spacing": {
+      "headings": "tracking-tight",
+      "overlines": "tracking-wider uppercase text-xs font-semibold",
+      "body": "tracking-normal"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split branded entry — left positioning & demo role quick-switcher (Pentadbir, Guru, Ibu Bapa), right quick-login preview card with mock credentials & sample metrics",
+    "/login": "split branded entry — left positioning & demo role quick-switcher (Pentadbir, Guru, Ibu Bapa), right quick-login preview card with mock credentials & sample metrics",
+    "/admin": "desktop-first operational dashboard with sidebar navigation, summary metric cards, recharts attendance visualization, attention item list, and live activity feed",
+    "/admin/students": "data-dense student directory with instant keyword search, classroom filter, attendance status pill badges, and quick profile trigger drawer",
+    "/admin/billing": "invoice overview table with status badges (Draf/Belum Dibayar/Sudah Dibayar/Tertunggak/Dibatalkan), monthly generation modal, and full interactive payment simulator flow",
+    "/teacher": "mobile-first daily classroom command center with warm Malay greeting, quick action grid, 'Kelas Saya' roster, and tap-to-record daily log drawers",
+    "/parent": "mobile-first child development center with child profile badge, today's highlight summary, rich daily timeline with visual Malay milestones, and instant online tuition payment simulator"
+  },
+  "visual_enhancers": {
+    "border_radius": {
+      "card": "rounded-2xl",
+      "button": "rounded-xl",
+      "badge": "rounded-full",
+      "input": "rounded-xl",
+      "dialog": "rounded-2xl"
+    },
+    "shadows": {
+      "card_subtle": "shadow-[0_2px_12px_rgba(15,23,42,0.04)]",
+      "card_hover": "shadow-[0_8px_24px_rgba(15,23,42,0.08)]",
+      "floating_nav": "shadow-[0_-4px_20px_rgba(15,23,42,0.06)]",
+      "modal": "shadow-[0_20px_50px_rgba(15,23,42,0.15)]"
+    },
+    "borders": "1px solid #E2E8F0",
+    "subtle_accents": "Soft pill badges with 10% opacity backgrounds matching their semantic state (emerald for Hadir, rose for Tidak Hadir, amber for Lewat/Tertunggak, sky for Cuti)"
+  },
+  "layouts_and_grids": {
+    "admin_layout": {
+      "structure": "Sidebar (w-64 fixed on desktop, collapsible drawer on mobile) + Topbar (h-16 with global role switcher, notification bell, date indicator, admin avatar) + Main scrollable viewport (p-6 lg:p-8 max-w-7xl mx-auto)",
+      "grid_dashboard": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-8 for summary cards; grid grid-cols-1 lg:grid-cols-3 gap-6 for charts and attention feeds (2-col chart, 1-col attention list)"
+    },
+    "teacher_layout": {
+      "structure": "Mobile-first container (max-w-md mx-auto min-h-screen bg-slate-50 pb-24 md:max-w-2xl lg:max-w-4xl) + Header with avatar & Cikgu greeting + Sticky top action banner + Bottom navigation bar (h-16 bg-white/95 backdrop-blur-md border-t)",
+      "quick_actions_grid": "grid grid-cols-3 sm:grid-cols-6 gap-3",
+      "roster_list": "flex flex-col gap-3"
+    },
+    "parent_layout": {
+      "structure": "Mobile-first child-centric container (max-w-md mx-auto min-h-screen bg-slate-50 pb-24 md:max-w-2xl lg:max-w-4xl) + Child avatar switcher banner + Today summary pill cards + Chronological daily timeline + Bottom navigation bar",
+      "timeline_structure": "relative border-l-2 border-teal-100 ml-4 pl-6 space-y-6 before:content-['']"
+    }
+  },
+  "components_specification": {
+    "role_switcher_banner": {
+      "description": "Top persistent demo banner allowing the management board to instantly flip between Pentadbir, Guru, and Ibu Bapa views without re-authenticating",
+      "test_id": "demo-role-switcher"
+    },
+    "attendance_status_pills": {
+      "variants": {
+        "Hadir": "bg-emerald-50 text-emerald-700 border border-emerald-200",
+        "Tidak Hadir": "bg-rose-50 text-rose-700 border border-rose-200",
+        "Lewat": "bg-amber-50 text-amber-700 border border-amber-200",
+        "Cuti": "bg-sky-50 text-sky-700 border border-sky-200"
+      }
+    },
+    "billing_status_pills": {
+      "variants": {
+        "Sudah Dibayar": "bg-emerald-50 text-emerald-700 border border-emerald-200",
+        "Belum Dibayar": "bg-amber-50 text-amber-700 border border-amber-200",
+        "Tertunggak": "bg-rose-50 text-rose-700 border border-rose-200",
+        "Draf": "bg-slate-100 text-slate-600 border border-slate-200",
+        "Dibatalkan": "bg-slate-50 text-slate-400 border border-slate-200 line-through"
+      }
+    },
+    "payment_simulator_modal": {
+      "steps": [
+        "1. Semak Maklumat Yuran (Invoice items, SST, total RM)",
+        "2. Pilih Saluran Pembayaran (FPX Online Banking [Maybank2u, CIMB Clicks, Bank Islam, etc.], DuitNow QR, Kad Debit/Kredit)",
+        "3. Simulasi Pemprosesan Selamat (Animated spinner with authentic Malaysian gateway feel)",
+        "4. Resit Rasmi Kejayaan (Printable official receipt with Nombor Resit, Tarikh, Masa, Nama Murid, Status 'LULUS / BERJAYA', Print & Muat Turun PDF triggers)"
+      ]
+    },
+    "teacher_daily_log_drawer": {
+      "tabs_or_steps": [
+        "Makanan (Habis / Sebahagian / Tidak Makan + Pilihan Menu)",
+        "Susu (Minum Habis / Sebahagian / Tidak Minum + Kuantiti oz)",
+        "Tidur (Masa Mula, Masa Tamat, Status Lena/Gelisah)",
+        "Aktiviti (Mewarna, Motor Halus, Bercerita, Muzik)",
+        "Perasaan (Gembira / Tenang / Aktif / Mengantuk / Sedih / Meragam)",
+        "Catatan & Insiden (Catatan Guru + Laporan Insiden Rendah/Sederhana/Tinggi jika ada)"
+      ]
+    },
+    "parent_daily_timeline": {
+      "time_format": "Malaysian Malay format: 8:12 pagi, 12:30 tengah hari, 2:15 petang",
+      "icons": {
+        "Daftar Masuk": "LogIn icon (teal)",
+        "Sarapan / Makan": "Utensils icon (amber)",
+        "Aktiviti": "Palette / Sparkles icon (indigo)",
+        "Susu": "Milk / Coffee icon (sky)",
+        "Tidur": "Moon / Bed icon (purple)",
+        "Daftar Keluar": "LogOut icon (teal)"
+      }
+    }
+  },
+  "motion_and_interactions": {
+    "principles": "Subtle, fluid micro-interactions with ease-out physics. No heavy spinning or disorienting full-page flips.",
+    "page_transitions": "opacity: 0 to 1, y: 6 to 0 in 0.25s ease-out",
+    "drawer_sheets": "slide in from bottom (mobile) or right (desktop) with 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+    "payment_success_stamp": "scale: 0.8 to 1 with spring bounce for the official 'SUDAH DIBAYAR' green badge",
+    "reduced_motion": "Wrap motion animations inside prefers-reduced-motion media query checks or fallback to instant rendering"
+  },
+  "accessibility": {
+    "contrast_compliance": "All normal text tokens maintain minimum 4.5:1 APCA/WCAG AA contrast. Slate-900 (#0F172A) on White is 17.5:1, Teal-700 (#0F766E) on White is 7.2:1.",
+    "form_accessibility": "All inputs use explicit Shadcn Label components with matching htmlFor. Date pickers use custom calendar popover with keyboard navigation.",
+    "interactive_targets": "All mobile tap targets are at least 44x44px. Buttons have distinct hover, focus-visible:ring-2 ring-teal-500, and active:scale-95 feedback states.",
+    "data_testids": "Every button, tab, quick-login role card, payment trigger, attendance toggle, and filter input must include data-testid attributes."
+  },
+  "image_urls": [
+    {
+      "category": "classroom_activity",
+      "url": "https://images.unsplash.com/photo-1587323655395-b1c77a12c89a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxhc2lhbiUyMHByZXNjaG9vbCUyMHRlYWNoZXIlMjBraWRzfGVufDB8fHx8MTc5MDg0ODc2OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Teacher and child coloring and engaging in art activity",
+      "placement": "Login banner / Parent daily story highlight"
+    },
+    {
+      "category": "teacher_student_interaction",
+      "url": "https://images.unsplash.com/photo-1772419130717-e0630e3e4f28?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwyfHxhc2lhbiUyMHByZXNjaG9vbCUyMHRlYWNoZXIlMjBraWRzfGVufDB8fHx8MTc5MDg0ODc2OHww&ixlib=rb-4.1.0&q=85",
+      "description": "Preschool teacher showing learning blocks to toddlers",
+      "placement": "Admin dashboard banner / Classroom profile header"
+    },
+    {
+      "category": "kindergarten_environment",
+      "url": "https://images.unsplash.com/photo-1763310225230-6e15b125935a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwyfHxraW5kZXJnYXJ0ZW4lMjBjaGlsZHJlbiUyMGNsYXNzcm9vbXxlbnwwfHx8fDE3ODYwMzI0Mjh8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Bright modern preschool play and learning corner",
+      "placement": "Classrooms management overview cards"
+    }
+  ],
+  "instructions_to_main_agent": [
+    "1. THEME & TONE: Maintain a soft, warm, modern, and professional SaaS atmosphere tailored for preschool administration in Malaysia. Avoid dark mode or childish arcade looks.",
+    "2. LANGUAGE: The entire interface must be in authentic Bahasa Malaysia with proper terminology (Murid, Ibu Bapa, Guru, Kehadiran, Yuran, Bil, Resit Rasmi, Pengumuman, Log Harian, etc.). All currency must display as 'RM XXX.XX' and dates in Malay month names (Jan, Feb, Mac, Apr, Mei, Jun, Jul, Ogo, Sep, Okt, Nov, Dis).",
+    "3. THREE ROLE EXPERIENCES: Implement a seamless role-switching mechanism (via the persistent top demo banner or /login quick-login buttons) allowing evaluation of: Pentadbir (Admin Desktop-First), Guru (Teacher Mobile-First), and Ibu Bapa (Parent Mobile-First).",
+    "4. LOCAL STORAGE PERSISTENCE: Use a rich mock data store in localStorage seeded with authentic Malaysian names (Cikgu Sarah, Puan Siti Nurhaliza, Muhammad Adam, Nur Aishah, etc.), pre-populated invoices, attendance records, and timeline activities, including a 'Reset Data Demo' button in Settings.",
+    "5. INTERACTIVE FLOWS: Implement the full simulated online payment modal with step-by-step progress and printable official receipt, as well as the quick one-tap attendance and daily log drawers for teachers.",
+    "6. CHARTS & SHADCN: Use Recharts for the attendance trend and finance breakdown. Use shadcn/ui base-nova components (@base-ui/react contract) with appropriate data-testid attributes throughout."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "spacing": "Use generous Tailwind spacing (p-6, p-8, gap-5). Prevent cramped tables or crowded mobile cards.",
+    "typography": "Use Plus Jakarta Sans Variable for clean, geometric, high-legibility preschool management presentation.",
+    "test_ids": "Every interactive trigger (role switch, tab change, modal submit, receipt print, attendance toggle) must include data-testid in kebab-case."
+  }
+}
